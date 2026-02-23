@@ -1,4 +1,5 @@
-# deCYPher 🧬
+# deCYPher <img width="55" height="50" alt="image" src="https://github.com/user-attachments/assets/78285037-c49d-4bc1-8072-3e9a0335f943" />
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
