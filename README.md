@@ -24,7 +24,9 @@ git clone https://github.com/HolidayChang/deCYPher.git
 cd deCYPher
 ```
 ### 2. One-Step Automated SetupRun the setup script located in the env/ folder. 
-This script automates the following tasks:Creates the Conda environment (deCYPher_env).Installs all dependencies (k8, paftools.js, biopython, pandas).Downloads and extracts the required reference data (ref/) from GitHub Releases.Configures the decypher command for your environment.Bashbash env/setup.sh
-3. Activate the EnvironmentAlways activate the Conda environment before using the tool:Bashconda activate deCYPher_env
+This script automates the following tasks:
+#### Creates the Conda environment (```deCYPher_env```).
+Installs all dependencies (k8, paftools.js, biopython, pandas).Downloads and extracts the required reference data (ref/) from GitHub Releases.Configures the decypher command for your environment.Bashbash env/setup.sh
+### 3. Activate the EnvironmentAlways activate the Conda environment before using the tool:Bashconda activate deCYPher_env
 4. Run AnalysisYou can now run the decypher command from any directory.Bashdecypher --input <assembly.fasta> --name <sample_id> --outdir <output_dir>
 Command Line Arguments:ArgumentDescriptionDefault--inputPath to the assembly fasta file (.fa or .fa.gz)Required--nameSample name used for prefixing output filesRequired--outdirDirectory to save the analysis resultsRequired--threadsNumber of CPU threads for alignment18
