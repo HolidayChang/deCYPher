@@ -1,4 +1,5 @@
-# deCYPher <img width="55" height="50" alt="image" src="https://github.com/user-attachments/assets/78285037-c49d-4bc1-8072-3e9a0335f943" />
+# deCYPher <img width="629" height="565" alt="image" src="https://github.com/user-attachments/assets/fd45dd0f-7515-4f18-9ae3-4a19d37ae8c3" />
+
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
