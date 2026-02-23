@@ -41,4 +41,12 @@ conda activate deCYPher_env
 ```bash
 decypher --input <assembly.fasta> --name <sample_id> --outdir <output_dir>
 ```
-Command Line Arguments:ArgumentDescriptionDefault--inputPath to the assembly fasta file (.fa or .fa.gz)Required--nameSample name used for prefixing output filesRequired--outdirDirectory to save the analysis resultsRequired--threadsNumber of CPU threads for alignment18
+Command Line Arguments:
+
+--input: Path to the assembly fasta file (.fa or .gz). (Required)
+
+--name: Sample name used for prefixing output files. (Required)
+
+--outdir: Directory to save the analysis results. (Required)
+
+--threads: Number of CPU threads for alignment. (Default: 18)
