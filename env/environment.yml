@@ -1,0 +1,14 @@
+name: deCYPher_env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - minimap2
+  - samtools
+  - pip
+  - pip:
+    - biopython
+    - pandas
+    - argparse

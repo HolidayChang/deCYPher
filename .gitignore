@@ -1,0 +1,25 @@
+# === Data & References ===
+
+ref/
+*.tar.gz
+*.zip
+
+# === Python & System ===
+__pycache__/
+*.py[cod]
+*$py.class
+
+.DS_Store
+Thumbs.db
+
+# === Results & Intermediates ===
+*.paf
+*.vcf
+*.txt
+outdir/
+
+# === Environments ===
+env/.conda/
+env/bin/
+env/lib/
+

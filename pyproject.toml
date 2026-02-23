@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decypher"
+version = "0.1.0"
+description = "Genotyping tool for pharmacogenes"
+license = {text = "MIT"}
+authors = [{name = "TING-YU CHANG"}]
+
+[project.scripts]
+decypher = "deCYPher:main"
+
+[tool.setuptools]
+py-modules = ["deCYPher", "extract_loci_from_paf", "anotation", "comparison"]
