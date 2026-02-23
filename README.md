@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
-**deCYPher** is a specialized genotyping pipeline designed for pharmacogenes (e.g., CYP2D6, CYP2C19) using high-fidelity (HiFi) assembly data. It integrates variant calling, haplotype alignment, and custom annotation logic to handle complex structural variants.
+**deCYPher** is a specialized genotyping pipeline designed for pharmacogenes (e.g., CYP2D6, CYP2C19) using high-fidelity (HiFi) assembly data. It integrates variant calling, haplotype alignment, and custom annotation logic to handle complex structural variants like gene deletions and hybrids.
 
 ---
 
@@ -18,9 +18,10 @@
 
 ---
 
-## 🛠 Installation
+## 🛠 Installation & Usage Guide
 
 ### 1. Clone the Repository
+Start by cloning the project from GitHub to your local machine:
 ```bash
 git clone [https://github.com/HolidayChang/deCYPher.git](https://github.com/HolidayChang/deCYPher.git)
 cd deCYPher
