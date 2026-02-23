@@ -30,7 +30,7 @@ This script automates the following tasks:
 #### Downloads and extracts the required reference data (```ref/```) from GitHub Releases.
 #### Configures the ```decypher``` command for your environment.
 ```bash
-env/setup.sh
+bash env/setup.sh
 ```
 ### 3. Activate the Environment
 Always activate the Conda environment before using the tool:
