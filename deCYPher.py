@@ -46,7 +46,7 @@ def main():
     args = parser.parse_args()
     ref_root = os.path.join(BASE_DIR, 'ref')
     extract_script = os.path.join(BASE_DIR, 'extract_loci_from_paf.py')
-    anotation_script = os.path.join(BASE_DIR, 'anotation.py')
+    annotation_script = os.path.join(BASE_DIR, 'annotation.py')
     comparison_script = os.path.join(BASE_DIR, 'comparison.py')
     paftools_js = os.path.join(os.environ.get('CONDA_PREFIX', ''), 'bin/paftools.js')
 
@@ -96,7 +96,7 @@ def main():
             base = os.path.splitext(fasta)[0]
             v_vcf = os.path.join(dirs['extract'], f"{base}.vcf")
             t_txt = os.path.join(dirs['result'], f"comparison_{base}.txt")
-            run_command(["python3", anotation_script, v_vcf, refseq_dir, t_txt, gene])
+            run_command(["python3", annotation_script, v_vcf, refseq_dir, t_txt, gene])
 
         # 6. Summarizing
         run_command(["python3", comparison_script, dirs['result'], dirs['result'], final_json_path, gene])
