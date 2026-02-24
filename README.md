@@ -40,7 +40,8 @@ Always activate the Conda environment before using the tool:
 ```bash
 conda activate deCYPher_env
 ```
-### 4. Run AnalysisYou can now run the decypher command from any directory.
+### 4. Run Analysis
+You can now run the decypher command from any directory.
 ```bash
 decypher --input <assembly.fasta> --name <sample_id> --outdir <output_dir>
 ```
