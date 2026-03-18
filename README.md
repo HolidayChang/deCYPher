@@ -1,4 +1,7 @@
-# deCYPher 🧬
+# <img width="55" height="50" alt="image" src="https://github.com/user-attachments/assets/39cd6a11-6a3b-4ae6-9829-d4e9f39a2f0a" /> deCYPher 
+
+
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -37,12 +40,13 @@ Always activate the Conda environment before using the tool:
 ```bash
 conda activate deCYPher_env
 ```
-### 4. Run AnalysisYou can now run the decypher command from any directory.
+### 4. Run Analysis
+You can now run the decypher command from any directory.
 ```bash
 decypher --input <assembly.fasta> --name <sample_id> --outdir <output_dir>
 ```
 Command Line Arguments:
-
+```bash
 --input: Path to the assembly fasta file (.fa or .gz). (Required)
 
 --name: Sample name used for prefixing output files. (Required)
@@ -50,3 +54,4 @@ Command Line Arguments:
 --outdir: Directory to save the analysis results. (Required)
 
 --threads: Number of CPU threads for alignment. (Default: 18)
+```

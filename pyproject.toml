@@ -13,4 +13,4 @@ authors = [{name = "TING-YU CHANG"}]
 decypher = "deCYPher:main"
 
 [tool.setuptools]
-py-modules = ["deCYPher", "extract_loci_from_paf", "anotation", "comparison"]
+py-modules = ["deCYPher", "extract_loci_from_paf", "annotation", "comparison"]
