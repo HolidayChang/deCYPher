@@ -1,21 +1,16 @@
 #!/bin/bash
 
 # 1. Setup Path Anchors
-# This gets the absolute path of the directory where setup.sh is located (the env folder)
 ENV_SCRIPT_DIR=$(dirname "$(readlink -f "$0")")
-# This gets the project root (one level up from env)
 ROOT_DIR=$(dirname "$ENV_SCRIPT_DIR")
 
-# Move to the project root so all relative paths work correctly
 cd "$ROOT_DIR"
 
 # 2. Create Conda environment
 echo "Creating Conda environment from environment.yml..."
-# Points specifically to the yml in the env folder
 conda env create -f "$ENV_SCRIPT_DIR/environment.yml"
 
 # 3. Activate environment and install the package
-# This ensures the 'decypher' command is linked to the project root
 source $(conda info --base)/etc/profile.d/conda.sh
 conda activate deCYPher_env
 

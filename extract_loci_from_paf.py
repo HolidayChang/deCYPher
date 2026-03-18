@@ -4,14 +4,12 @@ import gzip
 from Bio import SeqIO
 
 def open_fasta_file(file_path):
-    """Open regular or gzipped FASTA files."""
     if file_path.endswith(".gz"):
         return gzip.open(file_path, "rt")
     else:
         return open(file_path, "r")
 
 def extract_sequence_from_fasta(fasta_file, target_name, start, end, output_file):
-    """Extract a sequence from a fasta file given target name and start/end positions."""
     with open_fasta_file(fasta_file) as fasta_handle:
         for record in SeqIO.parse(fasta_handle, "fasta"):
             if record.id == target_name:
@@ -25,13 +23,12 @@ def extract_sequence_from_fasta(fasta_file, target_name, start, end, output_file
         print(f"Target name '{target_name}' not found in the FASTA file.")
 
 def parse_paf_and_extract_sequences(fasta_file, paf_file, output_path):
-    """Parse a PAF file and extract sequences from the fasta file for each entry."""
     with open(paf_file, "r") as paf_handle:
         for i, line in enumerate(paf_handle):
             columns = line.strip().split()
-            target_name = columns[5]  # Target name in the PAF file
-            target_start = int(columns[7])  # Start coordinate in the PAF file (0-based)
-            target_end = int(columns[8])    # End coordinate in the PAF file (0-based)
+            target_name = columns[5]  
+            target_start = int(columns[7])  
+            target_end = int(columns[8])    xs
             output_file = f"{output_path}/extracted_sequence_{i+1}.fasta"
             extract_sequence_from_fasta(fasta_file, target_name, target_start, target_end, output_file)
 
