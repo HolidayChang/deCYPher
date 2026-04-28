@@ -28,7 +28,7 @@ def parse_paf_and_extract_sequences(fasta_file, paf_file, output_path):
             columns = line.strip().split()
             target_name = columns[5]  
             target_start = int(columns[7])  
-            target_end = int(columns[8])    xs
+            target_end = int(columns[8])    
             output_file = f"{output_path}/extracted_sequence_{i+1}.fasta"
             extract_sequence_from_fasta(fasta_file, target_name, target_start, target_end, output_file)
 
